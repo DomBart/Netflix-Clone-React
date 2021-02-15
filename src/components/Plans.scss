@@ -1,0 +1,31 @@
+.plans__plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+
+  .plans__info {
+    height: max-content;
+    margin: auto 0;
+    min-width: 80px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    max-width: 200px;
+    margin-left: 10px;
+  }
+}
+
+.plans__plan--disabled {
+  button {
+    background-color: gray !important;
+    cursor: inherit;
+    pointer-events: none;
+  }
+}
+
+.plans__plan:hover {
+  opacity: 1;
+}
